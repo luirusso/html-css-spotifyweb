@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+
+footer {
+    position: relative;
+}
+
+.fixed-header {
+    background-color: black;
+    height: 80px;
+    text-align: right;
+    width: calc(100% - 300px);
+    position: fixed;
+    right: 0;
+}
+
+.fixed-nav {
+    width: 300px;
+    background-color: blue;
+    height: 100vh;
+}
+
+.fixed-toolbar {
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
