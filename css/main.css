@@ -29,6 +29,10 @@
 
 }
 
+.flexgrow {
+    flex-grow: 1;
+}
+
 /* MAIN CONTENT */
 .flex-container {
     display: flex;
@@ -49,23 +53,59 @@
 }
 
 .sidebar {
-    background-color: red;
+    background-color: black;
+    color: lightgray;
     width: 233px;
-    height: 100vh;
+    height: calc(100vh - 80px);
     padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar ul {
     list-style: none;
+    padding-bottom: 20px;
+    line-height: 40px;
+    font-size: 13px;
 }
 
-.sidebar img {
+.sidebar .logo {
     width: 86%;
+    padding-bottom: 20px;
 }
 
 .sidebar .sideicon {
     width: 16%;
+    vertical-align: middle;
 }
+
+.sidebar h4 {
+    padding-bottom: 10px;
+}
+
+.sidebar .plusicon {
+    font-size: 40px;
+}
+
+.sidebar .profileicon {
+    width: 14%;
+    background-color: grey;
+    border-radius: 50%;
+    padding: 0 2px;
+    vertical-align: middle;
+}
+
+.sidebar .downloadicon {
+    width: 10%;
+    vertical-align: middle;
+}
+
+.profile hr {
+    margin: 20px 0;
+}
+
+
+
 
 .main-content {
     padding-top: 100px;
