@@ -4,35 +4,50 @@
     box-sizing: border-box;
 }
 
-header {
+.posrelative {
     position: relative;
 }
 
-footer {
-    position: relative;
+.posabsolute {
+    position: absolute;
+}
+
+.posfixed {
+    position: fixed;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .fixed-header {
-    background-color: black;
-    height: 80px;
-    text-align: right;
-    width: calc(100% - 300px);
     position: fixed;
     right: 0;
+    text-align: right;
+    width: calc(100% - 300px);
+    background-color: black;
 }
 
-.fixed-nav {
+.main-section {
+    display: flex;
+}
+
+.sidebar {
+    background-color: red;
     width: 300px;
-    background-color: blue;
     height: 100vh;
 }
 
-.fixed-toolbar {
-    background-color: orange;
+.main-content {
+    padding-top: 100px;
+}
+
+.toolbar-section {
     display: flex;
     justify-content: space-between;
-    height: 70px;
-    position: fixed;
+    background-color: orange;
+    height: 80px;
     width: 100%;
     bottom: 0;
 }
