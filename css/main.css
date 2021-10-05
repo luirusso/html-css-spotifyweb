@@ -50,6 +50,7 @@
 
 .main-section {
     display: flex;
+    overflow: auto;
 }
 
 .sidebar {
@@ -60,6 +61,7 @@
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
+    overflow: auto;
 }
 
 .sidebar ul {
