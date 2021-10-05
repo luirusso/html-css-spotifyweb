@@ -63,6 +63,10 @@
     width: 86%;
 }
 
+.sidebar .sideicon {
+    width: 16%;
+}
+
 .main-content {
     padding-top: 100px;
 }
