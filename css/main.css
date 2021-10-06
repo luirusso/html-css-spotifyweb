@@ -12,10 +12,6 @@ body {
 }
 
 /* UTILITIES */
-.posabsolute {
-    position: absolute;
-}
-
 .posfixed {
     position: fixed;
 }
@@ -115,10 +111,14 @@ body {
 /* MAIN CONTENT */
 main {
     width: 100%;
+    background-color: #141922;
+    color: white;
+    overflow: auto;
 }
 
 .main-content {
     padding-top: 100px;
+    padding-left: 20px;
 }
 
 .main-navigation {
@@ -132,6 +132,20 @@ main {
     padding: 0 20px;
 }
 
+.album-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 6 - 20px);
+}
+
+.album-card {
+    height: 300px;
+    width: 300px;
+}
+
+.album-card img {
+    width: 65%;
+}
 
 
 .toolbar-section {
