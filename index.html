@@ -12,112 +12,130 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <header>
+        <div class="fixed-header">
+            <button class="upgrade-btn">
+                EFFETTUA L'UPGRADE
+            </button>
+        </div>
+    </header>
 
-    <div class="flex-container">
-        <header class="posrelative">
-            <div class="fixed-header">
-                <button class="upgrade-btn">
-                    EFFETTUA L'UPGRADE
-                </button>
-            </div>
-        </header>
+    <div class="main-section">
+        <aside>
+            <div class="sidebar">
+                <div class="logo">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+                <ul>
+                    <li>
+                        <span>
+                            <img class="sideicon" src="./img/home.svg" alt="">
+                        </span> Home
+                    </li>
+                    <li>
+                        <span>
+                            <img class="sideicon" src="./img/search.svg" alt="">
+                        </span> Cerca
+                    </li>
+                    <li>
+                        <span>
+                            <img class="sideicon" src="./img/libreria.svg" alt="">
+                        </span> La tua libreria
+                    </li>
+                </ul>
 
-        <div class="main-section">
-            <aside>
-                <div class="sidebar">
-                    <div class="logo">
-                        <img src="./img/logo.svg" alt="">
-                    </div>
+                <div class="flexgrow">
+                    <h4>PLAYLIST</h4>
+
                     <ul>
-                        <li>
+                        <li class="create-playlist">
                             <span>
-                                <img class="sideicon" src="./img/home.svg" alt="">
-                            </span> Home
+                                <i class="plusicon fas fa-plus-square"></i>
+                            </span>
+                            Crea playlist
+                        </li>
+                     <li>
+                         Nome playlist
                         </li>
                         <li>
-                            <span>
-                                <img class="sideicon" src="./img/search.svg" alt="">
-                            </span> Cerca
+                            Nome playlist
                         </li>
                         <li>
-                            <span>
-                                <img class="sideicon" src="./img/libreria.svg" alt="">
-                            </span> La tua libreria
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
+                        </li>
+                        <li>
+                            Nome playlist
                         </li>
                     </ul>
+                </div>
 
-                    <div class="flexgrow">
-                        <h4>PLAYLIST</h4>
-
-                        <ul>
-                            <li>
-                                <span>
-                                    <i class="plusicon fas fa-plus-square"></i>
-                                </span>
-                                Crea playlist
-                            </li>
-                         <li>
-                             Nome playlist
-                            </li>
-                            <li>
-                                Nome playlist
-                            </li>
-                            <li>
-                                Nome playlist
-                            </li>
-                            <li>
-                                Nome playlist
-                            </li>
-                            <li>
-                                Nome playlist
-                            </li>
-                            <li>
-                                Nome playlist
-                            </li>
-                        </ul>
+                <section class="profile">
+                    <div>
+                        <span>
+                            <img class="downloadicon" src="./img/download.svg" alt="">
+                        </span>
+                        Installa app
                     </div>
 
-                    <section class="profile">
-                        <div>
-                            <span>
-                                <img class="downloadicon" src="./img/download.svg" alt="">
-                            </span>
-                            Installa app
-                        </div>
+                    <hr>
 
-                        <hr>
-
-                        <div>
-                            <span>
-                                <img class="profileicon" src="./img/profile.svg" alt="">
-                                John Doe
-                            </span>
-                        </div>
-                    </section>
-                </div>
-            </aside>
-    
-            <main>
-                <div class="main-content">
-                    PROVA
-                </div>
-            </main>
-        </div>
-
-        <footer class="">
-            <div class="toolbar-section">
-                <div>
-                     SINISTRA
-                </div>
-                <div>
-                    CENTRO
-                </div>
-                <div>
-                    DESTRA
-                </div>
+                    <div>
+                        <span>
+                            <img class="profileicon" src="./img/profile.svg" alt="">
+                            John Doe
+                        </span>
+                    </div>
+                </section>
             </div>
-        </footer>
+        </aside>
+
+        <main>
+            <div class="main-content">
+                <nav>
+                    <ul class="main-navigation">
+                        <li>
+                            IN EVIDENZA
+                        </li>
+                        <li>
+                            PODCAST
+                        </li>
+                        <li>
+                            CLASSIFICHE
+                        </li>
+                        <li>
+                            GENERI E MOOD
+                        </li>
+                        <li>
+                            NUOVE USCITE
+                        </li>
+                        <li>
+                            SCOPRI
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </main>
     </div>
+
+    <footer class="">
+        <div class="toolbar-section">
+            <div>
+                 SINISTRA
+            </div>
+            <div>
+                CENTRO
+            </div>
+            <div>
+                DESTRA
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>

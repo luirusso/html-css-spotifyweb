@@ -6,11 +6,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* UTILITIES */
-.posrelative {
-    position: relative;
+body {
+    display: flex;
+    flex-direction: column;
 }
 
+/* UTILITIES */
 .posabsolute {
     position: absolute;
 }
@@ -33,12 +34,7 @@
     flex-grow: 1;
 }
 
-/* MAIN CONTENT */
-.flex-container {
-    display: flex;
-    flex-direction: column;
-}
-
+/* HEADER */
 .fixed-header {
     position: fixed;
     right: 0;
@@ -48,11 +44,13 @@
     padding: 20px;
 }
 
+/* MAIN SECTION */
 .main-section {
     display: flex;
     overflow: auto;
 }
 
+/* SIDEBAR SECTION */
 .sidebar {
     background-color: black;
     color: lightgray;
@@ -61,12 +59,13 @@
     padding: 10px 20px;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     overflow: auto;
 }
 
 .sidebar ul {
     list-style: none;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     line-height: 40px;
     font-size: 13px;
 }
@@ -79,6 +78,7 @@
 .sidebar .sideicon {
     width: 16%;
     vertical-align: middle;
+    margin-right: 8px;
 }
 
 .sidebar h4 {
@@ -87,6 +87,11 @@
 
 .sidebar .plusicon {
     font-size: 40px;
+    padding-right: 10px;
+}
+
+.create-playlist {
+    display: flex;
 }
 
 .sidebar .profileicon {
@@ -107,11 +112,27 @@
 }
 
 
-
+/* MAIN CONTENT */
+main {
+    width: 100%;
+}
 
 .main-content {
     padding-top: 100px;
 }
+
+.main-navigation {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-navigation li {
+    padding: 0 20px;
+}
+
+
 
 .toolbar-section {
     display: flex;
