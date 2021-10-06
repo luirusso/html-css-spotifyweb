@@ -27,6 +27,14 @@ body {
 
 }
 
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
 .flexgrow {
     flex-grow: 1;
 }
@@ -140,6 +148,7 @@ main {
 .main-content {
     padding-top: 100px;
     padding-left: 20px;
+    padding-bottom: 100px;
     max-height: calc(100vh - 80px);
     overflow: auto;
 }
@@ -180,13 +189,22 @@ main {
 
 
 
-
+/* FOOTER SECTION */
 .toolbar-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: orange;
+    background-color: #282828;
+    color: white;
     height: 80px;
-    width: 100%;
-    bottom: 0;
+    padding: 15px 20px;
+}
+
+.left-toolbar {
+    gap: 10px;
+    align-items: center;
+}
+
+.reproducing {
+    width: 11%;
 }
