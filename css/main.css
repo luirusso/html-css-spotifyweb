@@ -96,6 +96,7 @@ a {
     width: calc(100% - 233px);
     background-color: rgba(0, 0, 0, 0.89);
     padding: 20px;
+    z-index: 2;
 }
 
 /* MAIN SECTION */
