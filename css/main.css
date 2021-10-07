@@ -12,9 +12,17 @@ body {
     height: 100vh;
 }
 
+a {
+    text-decoration: none;
+    color: unset;
+}
 /* UTILITIES */
 .posfixed {
     position: fixed;
+}
+
+.cursorpointer {
+    cursor: pointer;
 }
 
 .upgrade-btn {
@@ -130,6 +138,7 @@ body {
 }
 
 .green-nav li:hover {
+    opacity 1;
     color: white;
     border-left: 4px solid rgb(153, 255, 0);
     cursor: pointer;
@@ -146,6 +155,15 @@ body {
 .sidebar .plusicon {
     font-size: 40px;
     padding-right: 10px;
+}
+
+.playlist-section {
+    color: lightgray;
+}
+
+.playlist-section li:hover {
+    color: white;
+    cursor: pointer;
 }
 
 .create-playlist {
