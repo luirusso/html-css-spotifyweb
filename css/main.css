@@ -191,7 +191,6 @@ a {
     margin: 20px 0;
 }
 
-
 /* MAIN CONTENT */
 main {
     width: 100%;
@@ -216,6 +215,11 @@ main {
 
 .main-navigation li {
     padding: 0 20px;
+    color: grey;
+}
+
+.main-navigation li:hover {
+    color: white;
 }
 
 .album-gallery {
