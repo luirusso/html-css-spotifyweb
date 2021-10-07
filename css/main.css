@@ -218,6 +218,20 @@ main {
     color: grey;
 }
 
+.main-navigation .current {
+    position: relative;
+}
+
+.main-navigation .current::after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: 3px;
+    background: greenyellow;
+    bottom: -7px;
+    left: 38%;
+}
+
 .main-navigation li:hover {
     color: white;
 }
