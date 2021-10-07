@@ -25,6 +25,10 @@ a {
     cursor: pointer;
 }
 
+.displaynone {
+    display: none;
+}
+
 .upgrade-btn {
     background-color: rgba(0, 0, 0, 0.89);
     border: 1px solid white;
@@ -280,6 +284,7 @@ footer i {
 }
 
 .volume-bar {
+    position: relative;
     width: 50%;
     height: 4px;
     background-color: grey;
@@ -287,8 +292,36 @@ footer i {
     margin: 0 15px;
 }
 
+.volume-bar:hover {
+    cursor: pointer;
+}
+
+.volume-bar:hover::before {
+    content:"";
+    position:absolute;
+    top: -4px;
+    left: 24%;
+    background:white;
+    width:12px;
+    height:12px;
+    border-radius:100%;
+}
+
+.volume-bar::after{
+    content: '';
+    display: block;
+    background: white;
+    width: 24%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+.volume-bar:hover:after {
+    background: greenyellow;
+}
+
 .reproducing {
-    width: 14%;
+    width: 18%;
 }
 
 .player-container {
@@ -319,9 +352,38 @@ footer i {
 }
 
 .time-bar {
+    position: relative;
     width: 45%;
     height: 4px;
     background-color: grey;
     border-radius: 15px;
     margin: 0 15px;
+}
+
+.time-bar:hover {
+    cursor: pointer;
+}
+
+.time-bar:hover::before {
+    content:"";
+    position:absolute;
+    top: -4px;
+    left: 24%;
+    background:white;
+    width:12px;
+    height:12px;
+    border-radius:100%;
+}
+
+.time-bar::after{
+    content: '';
+    display: block;
+    background: white;
+    width: 24%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+.time-bar:hover:after {
+    background: greenyellow;
 }
