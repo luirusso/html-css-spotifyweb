@@ -131,6 +131,10 @@ a {
     padding-bottom: 20px;
 }
 
+.sidebar .logo-mobile {
+    display: none;
+}
+
 .sidebar .sideicon {
     width: 16%;
     vertical-align: middle;
@@ -425,3 +429,69 @@ footer i {
 .time-bar:hover:after {
     background: greenyellow;
 }
+
+/* MEDIA QUERIES SECTION */
+
+@media screen and (max-width: 600px) and (min-width: 500px) {
+
+    .fixed-header {
+        width: calc(100% - 50px);;
+    }
+
+    .sidebar {
+        width: 50px;
+        padding: 0;
+        margin: 0;
+        padding-left: 9px;
+        padding-top: 5px;
+    }
+
+    .sidebar .logo {
+        display: none;
+    }
+
+    .sidebar .logo-mobile {
+        display: block;
+        width: 72%;
+        padding-left: 2px;
+    }
+
+    .sidebar .green-nav-text {
+        display: none;
+    }
+
+    .sidebar .sideicon {
+        width: 65%;
+        vertical-align: middle;
+        margin-right: 8px;
+        opacity: 0.5;
+    }
+
+    .sidebar .downloadicon {
+        width: 50%;
+    }
+
+    .sidebar .profileicon {
+        width: 60%;
+    }
+
+    .playlist-section {
+        display: none;
+    }
+
+    .sidebar h4 {
+        display: none;
+    }
+
+    .install {
+        display: none;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .profilename {
+        display: none;
+    }
+}   
