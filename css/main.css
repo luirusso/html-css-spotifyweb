@@ -260,16 +260,17 @@ main {
     width: 80%;
 }
 
-.album-card img:hover {
+.album-card:hover img {
     transition: filter 0.4s linear;
     filter: grayscale(100%);
 }
 
-.album-card:hover::before {
+.album-image:hover::before {
     content: "";
     position: absolute;
-    top: 82px;
-    right: 111px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 55px;
     font-family: 'Font Awesome 6 Free';
     z-index: 1;
