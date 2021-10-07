@@ -198,7 +198,11 @@ footer {
     background-color: #282828;
     color: white;
     height: 90px;
-    padding: 15px 20px;
+    /* padding: 15px 20px; */
+}
+
+footer i {
+    cursor: pointer;
 }
 
 .toolbar-section {
@@ -214,6 +218,18 @@ footer {
 
 .right-toolbar {
     align-items: center;
+}
+
+.right-toolbar i {
+    padding: 0 5px;
+}
+
+.volume-bar {
+    width: 27%;
+    height: 4px;
+    background-color: grey;
+    border-radius: 15px;
+    margin: 0 15px;
 }
 
 .reproducing {
@@ -238,4 +254,13 @@ footer {
 
 .progressbar {
     justify-content: center;
+    align-items: center;
+}
+
+.time-bar {
+    width: 27%;
+    height: 4px;
+    background-color: grey;
+    border-radius: 15px;
+    margin: 0 15px;
 }
