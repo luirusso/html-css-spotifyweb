@@ -110,7 +110,7 @@ body {
     padding-bottom: 30px;
     line-height: 40px;
     font-size: 13px;
-    opacity: 0.5;
+    color: lightgray;
 }
 
 .sidebar .logo {
@@ -122,6 +122,21 @@ body {
     width: 16%;
     vertical-align: middle;
     margin-right: 8px;
+    opacity: 0.5;
+}
+
+.green-nav li {
+    border-left: 4px solid transparent;
+}
+
+.green-nav li:hover {
+    color: white;
+    border-left: 4px solid rgb(153, 255, 0);
+    cursor: pointer;
+}
+
+.green-nav li:hover .sideicon {
+    opacity: 1;
 }
 
 .sidebar h4 {
