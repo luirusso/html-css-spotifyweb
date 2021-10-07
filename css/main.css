@@ -43,12 +43,21 @@ body {
     flex-wrap: wrap;
 }
 
+.flexshrink-0 {
+    flex-shrink: 0;
+}
+
+
 .paddingbottom-40px {
     padding-bottom: 40px;
 }
 
 .paddingbottom-20px {
     padding-bottom: 20px;
+}
+
+.paddingleft-20px {
+    padding-left: 20px;
 }
 
 .paddingleft-25px {
@@ -61,6 +70,10 @@ body {
 
 .round {
     border-radius: 50%;
+}
+
+.small-text {
+    font-size: 12px;
 }
 
 /* HEADER */
@@ -209,6 +222,7 @@ footer i {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 10px;
 }
 
 .left-toolbar {
@@ -219,10 +233,13 @@ footer i {
 .left-toolbar,
 .right-toolbar {
     width: 15%;
+    padding: 10px;
 }
 
 .right-toolbar {
     align-items: center;
+    flex-shrink: 0;
+    justify-content: flex-end;
 }
 
 .right-toolbar i {
@@ -238,7 +255,7 @@ footer i {
 }
 
 .reproducing {
-    width: 11%;
+    width: 14%;
 }
 
 .player-container {
@@ -248,10 +265,11 @@ footer i {
 .player {
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 .player-buttons {
-    font-size: 23px;
+    font-size: 18px;
 }
 
 .player-buttons i {
@@ -268,7 +286,7 @@ footer i {
 }
 
 .time-bar {
-    width: 27%;
+    width: 45%;
     height: 4px;
     background-color: grey;
     border-radius: 15px;
