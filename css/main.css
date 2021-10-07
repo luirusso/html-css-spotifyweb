@@ -216,6 +216,11 @@ footer i {
     align-items: center;
 }
 
+.left-toolbar,
+.right-toolbar {
+    width: 15%;
+}
+
 .right-toolbar {
     align-items: center;
 }
@@ -225,7 +230,7 @@ footer i {
 }
 
 .volume-bar {
-    width: 27%;
+    width: 50%;
     height: 4px;
     background-color: grey;
     border-radius: 15px;
@@ -236,8 +241,13 @@ footer i {
     width: 11%;
 }
 
+.player-container {
+    width: 70%;
+}
+
 .player {
     align-items: center;
+    justify-content: center;
 }
 
 .player-buttons {
