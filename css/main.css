@@ -494,4 +494,24 @@ footer i {
     .profilename {
         display: none;
     }
+
+    .main-navigation li {
+        padding: 9px 39px;
+        color: grey;
+        font-size: 14px;
+    }
+
+    .main-navigation .current::after {
+        content: '';
+        position: absolute;
+        width: 25%;
+        height: 3px;
+        background: greenyellow;
+        /* bottom: -7px; */
+        left: 38%;
+        bottom: 3px;
+    }
+
+    .album-card {
+        width: calc(100% / 2);
 }   
